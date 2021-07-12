@@ -21,12 +21,13 @@ public class playerController : MonoBehaviour
         Vector2 movementVector = movementValue.Get<Vector2>();
         movementX = movementVector.x;
         movementY = movementVector.y;
-        print("detected");
+        
     }
 
     void fixedUpdate()
     {
         Vector3 Movement = new Vector3(movementX, 0.0f, movementY);
         rb.AddForce(Movement * speed);
+        print("detected");
     }
 }
