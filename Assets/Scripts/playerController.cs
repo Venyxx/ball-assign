@@ -18,12 +18,13 @@ public class playerController : MonoBehaviour
     void onMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
-        movementX = movementVector.X;
-        movementY = movementVector.Y;
+        movementX = movementVector.x;
+        movementY = movementVector.y;
     }
 
     void fixedUpdate()
     {
-        rb.AddForce{movementVector};
+        Vector3 Movement = new Vector3(movementX, 0.0f, movementY);
+        rb.AddForce(movement);
     }
 }
