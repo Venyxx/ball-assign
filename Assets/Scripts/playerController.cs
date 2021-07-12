@@ -28,6 +28,6 @@ public class playerController : MonoBehaviour
     {
         Vector3 Movement = new Vector3(movementX, 0.0f, movementY);
         rb.AddForce(Movement * speed);
-        print("detected");
+        
     }
 }
