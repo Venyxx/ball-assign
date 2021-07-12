@@ -21,6 +21,7 @@ public class playerController : MonoBehaviour
         Vector2 movementVector = movementValue.Get<Vector2>();
         movementX = movementVector.x;
         movementY = movementVector.y;
+        Debug.Log("detected");
     }
 
     void fixedUpdate()
