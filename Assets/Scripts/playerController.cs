@@ -26,6 +26,6 @@ public class playerController : MonoBehaviour
     void fixedUpdate()
     {
         Vector3 Movement = new Vector3(movementX, 0.0f, movementY);
-        rb.AddForce(Movement);
+        rb.AddForce(Movement * speed);
     }
 }
