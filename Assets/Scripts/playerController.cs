@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class playerController : MonoBehaviour
 {
+    public float speed = 0;
     private Rigidbody rb;
     private float movementX;
     private float movementY;
