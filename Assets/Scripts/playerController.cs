@@ -11,7 +11,7 @@ public class playerController : MonoBehaviour
 
     }
 
-    void onMove()
+    void onMove(InputValue movementValue)
     {
         
     }
