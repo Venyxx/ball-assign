@@ -18,6 +18,8 @@ public class playerController : MonoBehaviour
     void onMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
+        movementX = movementVector.X;
+        movementY = movementVector.Y;
     }
 
     void fixedUpdate()
